@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  playwright:
+    build: .
+    ports:
+        - 4000:4000
+        - 443:443
+    volumes:
+      - .:/docker
+    privileged: true
